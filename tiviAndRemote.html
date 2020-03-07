@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="main()">
+
+<div class="calculatorBorder">
+    <input type="text" id="volumeBar" size="10px" style="background-color: black;color: white;border-color: black;text-align: left">
+    <input type="text" id="channel" size="14px" style="background-color: black;color: white;border-color: black;text-align: right">
+    <br>
+    <input type="image" id="display" src="image/off.png" width="230px" height="230px">
+
+    <br>
+    <button class="button button4" style="background-color: red" id="OnOff"
+            onclick="television.setStt()">O
+    </button>
+    <button class="button button5" id="upVol" onclick="volumeUp(true)">+</button>
+    <button class="button button5" id="downVol" onclick="volumeUp(false)">-</button>
+    <button class="button button4" id="upChannel" onclick="television.upChannel()">U</button>
+    <button class="button button4" id="downChannel" onclick="television.downChannel()">D</button>
+</div>
+
+<div class="calculatorBorder">
+    <button class="button button4" id="7" onclick="changeChannel(7)">7</button>
+    <button class="button button4" id="8" onclick="changeChannel(8)">8</button>
+    <button class="button button4" id="9" onclick="changeChannel(9)">9</button>
+    <button class="button button5" style="background-color: red" id="*" onclick="television.setStt()">O</button>
+    <br>
+    <button class="button button4" id="4" onclick="changeChannel(4)">4</button>
+    <button class="button button4" id="5" onclick="changeChannel(5)">5</button>
+    <button class="button button4" id="6" onclick="changeChannel(6)">6</button>
+    <button class="button button5" id="-" onclick="volumeUp(false)">-</button>
+    <br>
+    <button class="button button4" id="1" onclick="changeChannel(1)">1</button>
+    <button class="button button4" id="2" onclick="changeChannel(2)">2</button>
+    <button class="button button4" id="3" onclick="changeChannel(3)">3</button>
+    <button class="button button5" id="+" onclick="volumeUp(true)"> +</button>
+</div>
+
+
+</body>
+<script src="functions.js"></script>
+</html>
